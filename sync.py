@@ -166,7 +166,8 @@ def fetch_source(source):
         url = os.getenv("CCFDDL_YAML_URL", "https://ccfddl.github.io/conference/allconf.yml")
         r = session_with_retry().get(url, timeout=35)
         r.raise_for_status()
-        raw = r.text
+        # Let YAML decode UTF-8 instead of Requests' HTTP charset fallback.
+        raw = r.content
     data = yaml.safe_load(raw)
     if not data:
         raise ValueError("YAML source is empty; aborting, no data will be deleted")
