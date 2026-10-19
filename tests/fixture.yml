@@ -1,1 +1,41 @@
-
+- title: ICRA
+  description: IEEE International Conference on Robotics and Automation
+  sub: AI
+  rank:
+    ccf: B
+    core: A*
+  confs:
+    - id: icra27
+      year: 2027
+      link: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
+      timezone: AoE
+      timeline:
+        - abstract_deadline: '2027-07-01 23:59:59'
+          deadline: '2027-07-07 23:59:59'
+          comment: main round
+- title: CVPR
+  description: Computer Vision and Pattern Recognition
+  sub: AI
+  rank:
+    ccf: A
+    core: A*
+  confs:
+    - id: cvpr27
+      year: 2027
+      link: https://cvpr.thecvf.com/
+      timezone: UTC-8
+      timeline:
+        - deadline: '2027-08-20 23:59:59'
+- title: WorkshopExample
+  description: Example conference
+  sub: AI
+  rank:
+    ccf: B
+    core: B
+  confs:
+    - id: workshop27
+      year: 2027
+      link: https://example.org
+      timezone: UTC
+      timeline:
+        - deadline: '2027-09-02 23:59:59'
